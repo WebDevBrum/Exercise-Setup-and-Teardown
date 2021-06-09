@@ -11,7 +11,8 @@ Once your specs are organized, use information from the spec reporter to track d
 
 Suggested Plan of Attack
 Create a utilities folder in tests and separate the specs onto their respective files to match the structure of the src folder.
-Organize each test pair into a suite with a description. Create parent suites and name accordingly for types of utilities. 3 Place any data needed to run the tests into the appropriate describe blocks for scoping.
+Organize each test pair into a suite with a description. Create parent suites and name accordingly for types of utilities. 
+3 Place any data needed to run the tests into the appropriate describe blocks for scoping.
 Run the tests and locate the error.
 Fix the error in the appropriate file.
 Run tests again to ensure all tests pass.
