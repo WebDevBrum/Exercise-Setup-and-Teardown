@@ -1,14 +1,19 @@
 import newArr from '../index';
 
 
-const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
+describe('newArr should add a new item to the start of an array', () => {
+    const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
 
-it('should make a new array containing dog', () => {
-    expect(newArr(3, wordArr)).toContain('dog');
-});
-it('make a new array containing 3', () => {
-    expect(newArr(3, wordArr)).toContain(3);
-});
+    it('should make a new array containing dog', () => {
+        expect(newArr(3, wordArr)).toContain('dog');
+    });
+
+    it('make a new array containing 3', () => {
+        expect(newArr(3, wordArr)).toContain(3);
+    });
+})
+
+
 
 
 

@@ -3,7 +3,7 @@ import numbers from '../../utilities/numbers'
 
 describe("Number utility tests", () => {
 
-  describe("Check Sum", () => {
+  describe("sum gets the sum of two numbers", () => {
     it('should be a sum greater than 10', () => {
       expect(numbers.sum(3, 10)).toBeGreaterThan(10);
     });
@@ -12,7 +12,7 @@ describe("Number utility tests", () => {
     });
   })
 
-  describe("Check Multiplication", () => {
+  describe("multiply multiplies 2 numbers", () => {
     it('should multiply 3 by 5 and be 15', () => {
       expect(numbers.multiply(3, 5)).toBe(15);
     });

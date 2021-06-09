@@ -3,7 +3,7 @@ import strings from '../../utilities/strings'
 
 describe("String utilty tests", () => {
 
-  describe("Check Capitalisation", () => {
+  describe("capitalize capitalises a string", () => {
     it('should capitalize a string', () => {
       expect(strings.capitalize('a sentence')).toEqual('A Sentence');
     });

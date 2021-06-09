@@ -1,12 +1,11 @@
 import arrays from '../../utilities/arrays'
 
-
-const numArr = [3, 4, 5, 6];
-const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
-
 describe("Array utilty tests", () => {
 
-  describe("Array Addition", () => {
+  const numArr = [3, 4, 5, 6];
+  const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
+
+  describe("addArr adds numbers in an array", () => {
     it('should add numbers in array and be truthy', () => {
       expect(arrays.addArr(numArr)).toBeTruthy();
     });
@@ -15,7 +14,7 @@ describe("Array utilty tests", () => {
     });
   });
 
-  describe("Array Comparison", () => {
+  describe("concatArr concatinates 2 arrays", () => {
     it('should concatinate 2 arrays to not equal the first', () => {
       expect(arrays.concatArr(numArr, wordArr)).not.toEqual(numArr);
     });
@@ -24,7 +23,7 @@ describe("Array utilty tests", () => {
     });
   })
 
-  describe("Array contents", () => {
+  describe("cut3 removes item 3 from array", () => {
     it('should contain 3 items except rabbit', () => {
       expect(arrays.cut3(wordArr)).toEqual(['cat', 'dog', 'bird']);
     });
@@ -34,7 +33,7 @@ describe("Array utilty tests", () => {
   })
 
 
-  describe("Array Largest value", () => {
+  describe("lgNum obtains the largest number in an array", () => {
     it('should have 6 be largest number', () => {
       expect(arrays.lgNum(numArr)).toEqual(6);
     });
